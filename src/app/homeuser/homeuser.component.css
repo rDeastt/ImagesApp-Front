@@ -1,0 +1,278 @@
+/*inicio galeria*/
+.title{
+  text-align: center;
+  font-size: 75px;
+  margin-top: 30px;
+  font-family: Garamond, Arial;
+  margin-bottom: 35px;
+  /*sombra?Sombra no*/
+  font-weight: bold;
+}
+/*fin galeria*/
+
+/*inicio boton 1---------------------*/
+/*.button-upload{
+  margin-left: 10px;
+}*/
+.button-upload {
+  --main-focus: #2d8cf0;
+  --font-color: #323232;
+  --bg-color-sub: #dedede;
+  --bg-color: #eee;
+  --main-color: #323232;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button-upload, .button__icon, .button__text {
+  transition: all 0.3s;
+
+}
+
+.button-upload .button__text {
+  transform: translateX(22px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button-upload .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-upload .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+.button-upload:hover {
+  background: var(--bg-color);
+}
+
+.button-upload:hover .button__text {
+  color: transparent;
+}
+
+.button-upload:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button-upload:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
+}
+/*fin boton 1-----------------------*/
+
+.buttons{
+  text-align: center;
+}
+/*inicio prueba de botón*/
+.button-delete {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button-delete:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: rgb(255, 69, 69);
+  align-items: center;
+}
+
+.button-delete:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(60%);
+}
+
+.button-delete::before {
+  position: absolute;
+  top: -20px;
+  content: "Delete";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.button-delete:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+/*fin prueba de botón*/
+.example-button-row{
+  text-align: center;
+}
+
+div[ngFor] {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+div[ngFor] > div {
+  flex: 0 0 calc(33.333% - 10px);
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.example-button-row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*inicio prueba input*/
+input{
+  border-radius: 10px; /*border-radius: 5px;*/
+  border: 1.9px solid #000000; /*border: 1px solid #ccc;*/
+  padding: 10px; /*padding: 10px;*/
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 1.6);  /*0.75*/
+}
+/*fin prueba input*/
+
+.texto-con-sombra-tridimensional {
+  position: relative;
+  font-size: 36px;
+}
+
+.texto-con-sombra-tridimensional::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  transform: perspective(200px) rotateX(45deg);
+}
+
+.example-button-row{
+  display: flex;
+  justify-content: center;
+  /*justify-content: flex-end; -> para llevarlo a la derecha*/
+  /*text-align: right;
+  margin-bottom: 2px;
+  */
+  /*margin-right: 10px;*/
+}
+
+.button-delete{
+margin-top: -7px;
+margin-bottom: 10px;
+margin-right: 7px;
+}
+
+.buttons {
+  text-align: center; /* Alinea los elementos al centro */
+}
+
+.buttons {
+  text-align: center; /* Alinea los elementos al centro */
+}
+
+
+.buttons {
+  display: inline-flex;
+  align-items: center; /* Alinear verticalmente los elementos dentro del contenedor */
+}
+
+.buttons input, .buttons button {
+  vertical-align: middle; /* Alinear verticalmente los elementos */
+  margin-right: 10px; /* Ajustar el margen entre el input y el botón según sea necesario */
+}
+
+.button-upload {
+  /* Estilos de animación del botón */
+  /* ... (mantén los estilos de animación aquí) */
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+/*pruebas  --- boton 1*/
+.svg{
+  height: 24px;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  fill: none;
+  width: 24px;
+}
+/*bordes a los lados*/
+.container-i{
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+
+
+/*Pruebas*/
+.full-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.full-screen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
